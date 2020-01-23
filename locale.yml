@@ -1,0 +1,9 @@
+ru:
+  start: |
+    Выберите одну из команд:
+  alarm:
+    video: Обнаружено движение
+  commands:
+    show_cameras: покажи камеры
+  messages:
+    did_not_understand: Я вас не понял.

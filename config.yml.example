@@ -1,0 +1,6 @@
+telegram_bot_api_token: '55435435:asdfsadfsadfsadfsadf'
+language: ru
+allowed_telegram_ids:
+  - 66666666
+notify_telegram_ids:
+  - 66666666

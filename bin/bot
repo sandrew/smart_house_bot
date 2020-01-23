@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
+
+require 'yaml'
+CONFIG = YAML.load_file('config.yml')
+LOCALE = YAML.load_file('locale.yml')[CONFIG['language']]
+
+class Bot; end
+
+require_relative '../lib/bot'
+
+# Telegram::Bot.configure do |config|
+#   config.adapter = :net_http_persistent
+# end
+
+Bot.new.run
